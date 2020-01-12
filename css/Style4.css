@@ -1,0 +1,1013 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+/* html,
+body {
+    font-family: 'montserrat';
+} */
+
+/* css global */
+/* Utility */
+.tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+    border: 3px solid paleturquoise;
+    background: palegoldenrod;
+    color: rgba(0, 0, 0, .7);
+    width: 40px;
+    font-size: 9px;
+    font-weight: 500;
+    margin-bottom: -70px;
+}
+
+.tombol:hover {
+    background: wheat;
+    color: rgba(0, 0, 0, .7);
+}
+
+.btn-group-vertical .btn {
+    opacity: 0;
+}
+
+/* testimonial */
+.testimonial {
+    margin-top: 30px;
+    margin-bottom: 10px !important;
+
+}
+
+.testimonial h5 {
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 20px;
+}
+
+
+/* footer */
+.footer {
+    margin: 80px 0;
+    padding-top: 250px;
+}
+
+.footer p {
+    color: #acacac;
+    font-size: 18px;
+}
+
+
+
+/* navbar */
+.navbar {
+    position: relative;
+    z-index: 1;
+    /* background: whitesmoke; */
+    background: palegoldenrod;
+    border-radius: 5px;
+}
+
+/* .navbar:after {
+    content: '';
+    display: block;
+    width: 100%;
+     kalau tidak mau sampe atas 
+    height: 20%;
+    background-image: -webkit-linear-gradient(to top, rgba(175, 32, 32, 0.2), rgba(0, 0, 0, 0));
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+
+     supaya nempel dibawah jumbotron 
+    bottom: 0;
+    left: 0;
+    border-radius: 12px;
+} */
+
+.navbar-brand {
+    font-family: 'montserrat';
+    font-size: 15px !important;
+    border: 1px solid black;
+    border-radius: 12px;
+    font-weight: 400 !important;
+}
+
+.navbar .container .navbar-brand {
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    color: rgba(0, 0, 0, 1);
+    text-shadow: 1px 1px 1px wheat;
+    font-family: 'Playfair Display';
+    padding: 0 13px;
+    padding-right: 40px;
+    padding: 5px;
+}
+
+.navbar .container .navbar-brand div {
+    display: inline;
+}
+
+.navbar .container .navbar-brand .brn-animate {
+    position: relative;
+    opacity: 0;
+    margin-left: -63px;
+    -webkit-transition: all 1.5s;
+    transition: all 1.5s;
+}
+
+.navbar .container .navbar-brand .brn-animate2 {
+    position: relative;
+    opacity: 1;
+    margin-left: 7px;
+    -webkit-transition: all 1.5s;
+    transition: all 1.5s;
+}
+
+.navbar .container .navbar-brand .brn-animate3 {
+    position: relative;
+    opacity: 1;
+    margin-left: 34px;
+    -webkit-transition: all 1.5s;
+    transition: all 1.5s;
+    padding-right: 20px
+}
+
+.navbar .container .navbar-brand:hover .brn-animate {
+    position: relative;
+    opacity: 1;
+    margin-left: 0px;
+    -webkit-transition: all 1.5s;
+    transition: all 1.5s;
+}
+
+.navbar .container .navbar-brand:hover .brn-animate2 {
+    position: relative;
+    opacity: 1;
+    margin-left: 0px;
+    margin-right: -4px;
+    -webkit-transition: all 1.5s;
+    transition: all 1.5s;
+}
+
+.navbar .container .navbar-brand:hover .brn-animate3 {
+    position: relative;
+    opacity: 1;
+    margin-left: 0px;
+    margin-right: -22px;
+    -webkit-transition: all 1.5s;
+    transition: all 1.5s;
+
+}
+
+/* jumbotron */
+.jumbotron {
+    /* background-image: url(../images/assets/background.jpg);
+    background-size: cover; */
+    height: 550px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    /* background: rgb(64, 151, 142); */
+    background: palegoldenrod;
+}
+
+.jumbotron .container {
+    position: relative;
+    margin-top: 20px;
+}
+
+.jumbotron:after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 80%;
+    position: absolute;
+    background-image: url(../images/assets/IMG_0114.JPG);
+    top: 0;
+    right: 5%;
+    border-radius: 15px;
+    background-size: cover;
+    background-position-x: -80px !important;
+}
+
+.jumbotron .container .display-4 {
+    opacity: 0;
+    -webkit-transform: translateY(-450px);
+    transform: translateY(-450px);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    color: rgba(0, 0, 0, 9);
+    margin-bottom: 30px;
+    margin-top: 70px;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px wheat;
+    font-size: 35px;
+    text-align: left;
+    font-family: 'Merriweather';
+    margin-right: 35px;
+    margin-left: 25px;
+    z-index: 4;
+    position: relative;
+}
+
+.jumbotron .container .display-4.judul-animation {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    z-index: 4;
+    position: relative;
+}
+
+.jumbotron .container .judul-bawah {
+    -webkit-transform: translateY(-450px);
+    transform: translateY(-450px);
+    opacity: 0;
+    -webkit-transition: 1s all;
+    transition: 1s all;
+    font-size: 15px;
+    font-weight: 200;
+    border-radius: 12px;
+    text-align: left;
+    margin-top: -23px;
+    margin-right: 45px;
+    margin-left: 25px;
+    font-family: 'montserrat';
+    z-index: 4;
+    position: relative;
+}
+
+.jumbotron .judul-bawah.judul-animation2 {
+    opacity: 1;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    z-index: 4;
+    position: relative;
+}
+
+
+.jumbotron .container .page-scroll {
+    display: block;
+    text-align: left;
+    -webkit-transform: translateY(-450px);
+    transform: translateY(-450px);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    opacity: 0;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: 'montserrat';
+    margin-right: 25px;
+    margin-left: 25px;
+    z-index: 2;
+    position: relative;
+    text-decoration: none;
+}
+
+.jumbotron .container .page-scroll.btn-animation {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    opacity: 1;
+}
+
+.jumbotron .container a .judul-bawah2 {
+    padding: 3px 6px;
+}
+
+.jumbotron .container .tombol-jumbotron {
+    text-transform: uppercase;
+    border-radius: 8px;
+    border: 3px solid paleturquoise;
+    background: palegoldenrod;
+    color: rgba(0, 0, 0, .7);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.jumbotron .container .tombol-jumbotron:hover {
+    background: wheat;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    border: 2px solid blue;
+}
+
+/* info panel */
+.info-panel {
+    box-shadow: 0 1px 10px rgba(0, 0, 0, .5);
+    border-radius: 12px;
+    margin-top: -80px;
+    /* background-image: url(../images/assets/bg-panel.jpg); */
+    padding-top: 10px;
+
+    z-index: 2;
+    background-size: cover;
+    background-color: palegoldenrod;
+}
+
+.info-panel:after {
+    content: '';
+    display: block;
+    width: 100%;
+    /* kalau tidak mau sampe atas */
+    height: 20%;
+    background-image: -webkit-linear-gradient(to top, rgba(175, 32, 32, 0.2), rgba(0, 0, 0, 0));
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+    position: absolute;
+    /* supaya nempel dibawah jumbotron */
+    bottom: 0;
+    left: 0;
+    border-radius: 12px;
+}
+
+.info-panel img {
+    width: 40px;
+    height: 40px;
+}
+
+.info-panel h4 {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+.info-panel p {
+    font-size: 8px;
+    color: #acacac;
+    margin-top: -5px;
+    opacity: 0;
+    position: absolute;
+}
+
+.info-panel a {
+    text-decoration: none;
+    color: black;
+}
+
+.panel-item-hover {
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.panel-item-hover:hover {
+    background: rgba(0, 0, 0, 0.4) !important;
+    border-radius: 12px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+/* about */
+.about-scroll .container-about {
+    background-size: cover;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-image: url(../images/assets/aboutbg2.jpg);
+    /* border: 5px solid paleturquoise; */
+    box-shadow: 7px 7px 15px paleturquoise,
+        3px 3px 0 paleturquoise,
+        -7px -7px 15px palegoldenrod,
+        -3px -3px 0 palegoldenrod;
+    opacity: 0;
+    -webkit-transition: all 2s;
+    transition: all 2s;
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+
+}
+
+.about-scroll .container-about.about-muncul {
+    opacity: 1;
+    -webkit-transition: all 2s;
+    transition: all 2s;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.about-scroll .container-about h2 {
+    font-size: 20px;
+    text-align: left;
+    padding-left: 15px;
+}
+
+
+/* dashboard profil */
+.workspace img {
+    border-radius: 20px;
+    /* border: 5px solid paleturquoise; */
+    box-shadow: -7px -7px 15px paleturquoise,
+        -3px -3px 0 paleturquoise,
+        10px 10px 15px palegoldenrod,
+        3px 3px 0 palegoldenrod;
+
+}
+
+.workspace {
+    margin-top: 180px;
+    text-align: center;
+    border: 1px solid white;
+
+}
+
+.workspace .workspace-item {
+    z-index: 1 !important;
+    margin-top: -100px;
+    opacity: 0;
+    -webkit-transition: all 2s;
+    transition: all 2s;
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+}
+
+.workspace .workspace-item.workspace-muncul {
+    opacity: 1;
+    -webkit-transition: all 2s;
+    transition: all 2s;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px)
+}
+
+.workspace h3 {
+    font-size: 30px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.workspace span {
+    font-weight: 500;
+}
+
+.workspace p {
+    font-size: 12px;
+    font-weight: 200;
+    color: #acacac;
+    margin: 10px;
+    font-family: 'montserrat';
+
+}
+
+.workspace a {
+    display: block;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: palegoldenrod;
+    color: black;
+}
+
+
+/* dashboard portfolio */
+.portfolio {
+    border: 1px solid white;
+    margin-top: 180px;
+    margin-bottom: 50px;
+    text-align: center;
+
+}
+
+.portfolio .text-center {
+    z-index: 1;
+}
+
+.portfolio p .folio-border {
+    font-weight: 500;
+}
+
+.parallax-item1 {
+    margin-top: 30px;
+    text-shadow: 5px 5px 0 paleturquoise;
+    font-size: 35px;
+    border-radius: 40px;
+    margin-bottom: -180px;
+
+}
+
+.parallax-item2 {
+    z-index: 1;
+    margin-top: -40px;
+    margin-bottom: -50px;
+}
+
+
+.portfolio .port-parallax {
+    opacity: 0;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+}
+
+.portfolio .port-parallax.portfolio-muncul {
+    opacity: 1;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+.portfolio img {
+    border-radius: 5px;
+    height: 180px;
+    margin-top: 10px;
+}
+
+.portfolio .img-thumbnail {
+    border-radius: 5px;
+}
+
+.portfolio .portfolio-card {
+    z-index: 3;
+    margin-top: 30px;
+}
+
+.portfolio .portfolio-card .card .card-body {
+    margin-left: -16px;
+}
+
+.portfolio .card .card-body h5 {
+    margin-top: -10px;
+}
+
+.portfolio .card .card-body .deskripsi-card {
+    margin-top: -10px;
+}
+
+.portfolio .card .card-body .deskripsi-card2 {
+    margin-top: 50px;
+}
+
+.portfolio .card {
+    padding: 0 5px;
+    padding-top: 5px;
+    border-radius: 12px;
+}
+
+.portfolio .card img {
+    padding: 4px 6px;
+    border-radius: 11px;
+}
+
+.portfolio-card .card {
+    border-radius: 20px;
+    width: 100px !important;
+    border: 2px solid palegoldenrod;
+}
+
+.bg-card1 {
+    /* background: linear-gradient(to top, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%); */
+    background: #00d2ff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #928DAB, #00d2ff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(top, #928DAB, #00d2ff);
+    background: linear-gradient(to bottom, #928DAB, #00d2ff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+/* dashboard gallery */
+.gallery {
+    border: 1px solid white;
+    margin-top: 140px;
+    margin-bottom: 50px;
+}
+
+.gallery .container-gallery h2,
+.gallery .container-gallery hr {
+    margin-top: 30px;
+
+}
+
+.gallery .container-gallery {
+    background-size: cover;
+    margin-top: -90px;
+    border-radius: 40px;
+    padding-top: 0px;
+    padding-bottom: 30px;
+    background-image: url(../images/assets/gallery-bg5.jpg);
+    background-position: 0, -70px;
+    box-shadow: -7px -7px 15px paleturquoise,
+        -3px -3px 0 paleturquoise,
+        10px 10px 15px palegoldenrod,
+        3px 3px 0 palegoldenrod;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: 2s;
+    transition: 3s;
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+}
+
+.gallery .container-gallery.gallery-muncul {
+    opacity: 1;
+    -webkit-transition: 2s;
+    transition: 3s;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+
+.gallery .container p {
+    margin-top: 10px;
+    background: rgba(160, 160, 160, 0.6);
+    padding: 20px 30px 20px 30px;
+    color: black;
+    border-radius: 12px;
+}
+
+.gallery img {
+    border-radius: 20px;
+}
+
+.gallery .container-gallery .container .button a {
+    display: block;
+    text-align: center;
+    border: 3px solid paleturquoise !important;
+    border-radius: 10px !important;
+    background: rgb(194, 193, 185);
+    color: black;
+    margin-bottom: 20px;
+    background: palegoldenrod;
+}
+
+
+.gallery .container-gallery .container .button a:hover {
+    background: wheat;
+}
+
+
+
+
+/* untuk ukuran yang berbeda */
+
+/* DESKOP VERSION */
+@media (min-width: 992px) {
+
+    .tombol {
+        width: 100px;
+        font-size: 13px;
+        margin-bottom: -100px;
+    }
+
+    .tombol:hover {
+        background: wheat;
+        color: rgba(0, 0, 0, .7);
+    }
+
+    .navbar {
+        padding-top: 20px;
+        background: none;
+        border-radius: 12px;
+    }
+
+    .navbar-brand,
+    .nav-link {
+        /* color: #1c2c5d !important; */
+        color: #928DAB;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    }
+
+    .navbar-brand {
+        font-size: 24px !important;
+        border: 1px solid black;
+        border-radius: 12px;
+        font-weight: 400 !important;
+        font-family: 'merriweather' !important;
+    }
+
+    .nav-link {
+        /* mengganti Hurup jadi besar */
+        /* text-transform: uppercase; */
+        font-size: 15px;
+        margin-right: 30px;
+        -webkit-transition: all 1s;
+        transition: all 1s;
+        border-radius: 40px;
+        padding: 5px 5px !important;
+    }
+
+    .nav-link:hover {
+        /* mengganti Hurup jadi besar */
+        /* text-transform: uppercase; */
+        color: rgba(0, 0, 0, 0.5) !important;
+        border-radius: 40px;
+        -webkit-transition: all 1s;
+        transition: all 1s;
+        box-sizing: border-box;
+        /* background: wheat !important; */
+        background: wheat;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .link-aktif {
+        color: rgba(0, 0, 0, .5) !important;
+        border-radius: 40px;
+        background: palegoldenrod;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-link:hover:after {
+        content: '';
+        display: block;
+
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .navbar .container .navbar-brand {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+    .navbar .container .navbar-brand div {
+        display: inline;
+    }
+
+    .navbar .container .navbar-brand .brn-animate {
+        position: relative;
+        opacity: 0;
+        margin-left: -107px;
+        -webkit-transition: all 1.5s;
+        transition: all 1.5s;
+    }
+
+    .navbar .container .navbar-brand .brn-animate2 {
+        position: relative;
+        opacity: 1;
+        margin-left: 7px;
+        -webkit-transition: all 1.5s;
+        transition: all 1.5s;
+    }
+
+    .navbar .container .navbar-brand .brn-animate3 {
+        position: relative;
+        opacity: 1;
+        margin-left: 54px;
+        -webkit-transition: all 1.5s;
+        transition: all 1.5s;
+        padding-right: 29px;
+    }
+
+    .navbar .container .navbar-brand:hover .brn-animate {
+        position: relative;
+        opacity: 1;
+        margin-left: 0px;
+        -webkit-transition: all 1.5s;
+        transition: all 1.5s;
+    }
+
+    .navbar .container .navbar-brand:hover .brn-animate2 {
+        position: relative;
+        opacity: 1;
+        margin-left: -3px;
+        margin-right: -6px;
+        -webkit-transition: all 1.5s;
+        transition: all 1.5s;
+    }
+
+    .navbar .container .navbar-brand:hover .brn-animate3 {
+        position: relative;
+        opacity: 1;
+        margin-left: -1px;
+        margin-right: -33px;
+        -webkit-transition: all 1.5s;
+        transition: all 1.5s;
+    }
+
+    /* mini navbar */
+    .btn-group-vertical .btn {
+        background: wheat !important;
+        opacity: 1;
+    }
+
+    .quick-link {
+        left: 0;
+        bottom: 0;
+        position: fixed;
+        border-radius: 12px;
+        z-index: 4;
+        height: 110%;
+    }
+
+    /* jembutron */
+    .jumbotron {
+        margin-top: -75px;
+        height: 640px;
+    }
+
+    .jumbotron .container {
+        position: relative;
+        margin-top: 50px;
+    }
+
+    .jumbotron .container .display-4 {
+        font-size: 40px;
+        text-align: left;
+        margin-top: 120px;
+        font-family: 'Merriweather';
+        margin-right: 50%;
+        margin-left: 0px
+    }
+
+    .jumbotron .container .judul-bawah {
+        font-size: 15px;
+        background: none;
+        margin-top: -27px;
+        background: none;
+        border-radius: 12px;
+        text-align: left;
+        margin-right: 60%;
+    }
+
+    .jumbotron .container .page-scroll {
+        text-align: left;
+        margin-top: 5px;
+        text-decoration: none;
+    }
+
+    .jumbotron .container a .judul-bawah2 {
+        padding: 3px 6px;
+    }
+
+    
+
+    /* info panel */
+    .info-panel {
+        padding: 20px;
+
+    }
+
+    .info-panel img {
+        width: 90px;
+        height: 90px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        float: left;
+    }
+
+    .info-panel h4 {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 15px;
+
+    }
+
+    .info-panel p {
+        font-size: 14px;
+        color: #acacac;
+        margin-top: -5px;
+        opacity: 1;
+        position: static;
+    }
+
+    .panel-item-hover {
+        -webkit-transition: all 1s;
+        transition: all 1s;
+        border-radius: 12px;
+        text-align: left;
+    }
+
+    .panel-item-hover:hover {
+        background: rgba(0, 0, 0, 0.4) !important;
+        border-radius: 12px;
+        -webkit-transition: all 1s;
+        transition: all 1s;
+    }
+
+    .info-panel .panel-item-hover .link-hover .display-panel {
+        display: block !important;
+    }
+
+    .panel-item-hover:hover p {
+        color: white !important;
+    }
+
+    .panel-item-hover .panel-flow {
+        float: left;
+    }
+
+    /* about */
+    .about-scroll .container-about {
+        background-size: cover;
+        margin-top: -30px;
+        border-radius: 40px;
+        padding-top: 130px;
+        padding-bottom: 120px;
+        background-image: url(../images/assets/aboutbg2.jpg);
+        /* border: 5px solid paleturquoise; */
+        box-shadow: 7px 7px 15px paleturquoise,
+            3px 3px 0 paleturquoise,
+            -7px -7px 15px palegoldenrod,
+            -3px -3px 0 palegoldenrod;
+        opacity: 0;
+        -webkit-transition: all 2s;
+        transition: all 2s;
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
+    }
+
+    .about-scroll .container-about.about-muncul {
+        opacity: 1;
+        -webkit-transition: all 2s;
+        transition: all 2s;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    .about-scroll .container-about h2 {
+        font-size: 30px;
+        text-align: left;
+        padding-left: 15px;
+    }
+
+    /* dashboard profil */
+    .workspace {
+        text-align: left;
+        margin-top: 150px;
+    }
+
+    .workspace h3 {
+        font-size: 52px;
+        font-weight: 200;
+        text-transform: uppercase;
+        margin-top: 30px;
+        text-shadow: 5px 5px 0 paleturquoise,
+            8px 8px 0 palegoldenrod;
+    }
+
+    .workspace p {
+        font-size: 18px;
+        font-weight: 200;
+        color: #acacac;
+        margin: 25px 0;
+    }
+
+    .testimonial {
+        margin-top: 80px;
+        margin-bottom: 80px !important;
+    }
+
+    .testimonial h5 {
+        font-size: 32px;
+    }
+
+    /* portfolio */
+    .portfolio {
+        margin-bottom: 130px;
+        margin-top: 230px;
+    }
+
+    .parallax-item1 {
+        font-size: 52px;
+        margin-top: 0px !important;
+        margin-bottom: -200px;
+    }
+
+    .parallax-item2 {
+
+        margin-bottom: 0px;
+    }
+
+    .gallery {
+        margin-top: 220px;
+        margin-bottom: 50px;
+    }
+
+    .gallery .container-gallery h2 {
+        margin-top: -90px;
+
+    }
+
+    .gallery .container-gallery {
+        padding-top: 120px;
+        padding-bottom: 90px;
+    }
+
+    .gallery .container p {
+        margin-top: 50px;
+    }
+
+    .gallery .container-gallery .container .button a {
+        display: block;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 5px;
+        background: palegoldenrod;
+        color: black;
+    }
+
+}

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+
+/* jumbotron dashboard */
+.jumbotron {
+    height: 400px;
+    background-image: url('./images/pampam.png');
+    /* agar background tetap */
+    background-attachment: fixed;
+    /* agar gambarnya memenuhi layar */
+    background-size: cover;
+    /* agar gambarnya agak ke atas */
+    background-position: 0 -100px;
+    color: #eaeaea;
+    overflow: hidden;
+}
+
+
+.jumbotron img {
+    height: 200px;
+    width: 200px;
+    border: 5px solid #eaeaea !important;
+    border-radius: 100%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0, .5);
+}
+
+.jumbotron h1,
+.jumbotron p {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0, .5);
+}
+
+hr {
+    width: 250px;
+    border-top: 3px solid #999;
+}
+
+section {
+    /* minimal height */
+    min-height: 600px;
+}
+
+.pKiri,
+.pKanan {
+    opacity: 0;
+    transform: translate(-50px, 0) rotate(15deg);
+    transition: 1s;
+}
+
+.pKanan {
+    transform: translate(50px, 0) rotate(-15deg);
+    transition: 1s;
+}
+
+.pKiri.pMuncul,
+.pKanan.pMuncul {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: 1s;
+}
+
+.portfolio {
+    background: #eee;
+    padding-top: 50px;
+}
+
+.portfolio .img-thumbnail {
+    opacity: 0;
+    transition: 2s;
+    transform: translate(0, -40px);
+}
+
+/* class dibawah menyatu agar bisa ditambahkan pada jquery */
+/* jadi jika tidak di satukan maka tidak akan jalan */
+.portfolio .img-thumbnail.muncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.contact {
+
+    padding-top: 50px;
+}
+
+.about {
+    padding-top: 50px;
+}
+
+.img-thumbnail {
+    height: 200px;
+    width: 200px;
+    margin-top: 30px;
+
+}
+
+/* container footer masih static sehingga harus diubah menjadi nonstatic */
+footer {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    background: #333;
+    padding-top: 20px;
+}
+
+footer p {
+    color: #aaa;
+    font-size: 0.9em;
+}
+
+/* tips atau cara mengubah footer menjadi static atau fix footer */
+html {
+    /* agar dia naik 1 dimensi */
+    position: relative;
+}
+
+body {
+    /* samakan dengan tinggi footer */
+    margin-bottom: 100px;
+    margin-top: 50px;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.contact {
+    min-height: 800px;
+}
